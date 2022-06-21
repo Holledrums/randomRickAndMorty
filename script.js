@@ -38,3 +38,5 @@ function randomCharacters(data) {
 
 button.addEventListener("click", rickMortyCharacters);
 rickMortyCharacters();
+
+// have fun
