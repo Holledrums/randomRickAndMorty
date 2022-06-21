@@ -1,8 +1,10 @@
-const randNum = Math.floor(Math.random() * 42) + 1;
+//const randNum = Math.floor(Math.random() * 42) + 1;
 const charDiv = document.querySelector(".charDiv");
 const button = document.querySelector("#newChar");
 
-const apiCharacterURl = `https://rickandmortyapi.com/api/character/?page=${randNum}`;
+const randNum = () => Math.floor(Math.random() * 42) + 1;
+
+const apiCharacterURl = `https://rickandmortyapi.com/api/character/?page=${randNum()}`;
 
 async function rickMortyCharacters() {
   const response = await fetch(apiCharacterURl);
@@ -19,7 +21,7 @@ function randomCharacters(data) {
   const species = document.createElement("p"); // erstellen  des p-tags für den spezies
   const episode = document.createElement("a"); // erstellen  des p-tags für den episoden-link
 
-  const episodeNum = character.episode.toString().substring(40);
+  const episodeNum = character.episode.toString().substring(40, 42);
 
   img.src = character.image; // einfügen des image links um auf html seite angezeigt zu werden
   name.textContent = `Character: ${character.name}`; // einfügen des texts um auf html seite angezeigt zu werden
@@ -35,5 +37,6 @@ function randomCharacters(data) {
   charDiv.appendChild(episode);
 }
 
-button.addEventListener("click", rickMortyCharacters);
+button.addEventListener("click", rickMortyCharacters, randNum);
 rickMortyCharacters();
+randNum();
