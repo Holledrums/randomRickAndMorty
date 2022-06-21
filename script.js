@@ -16,19 +16,22 @@ function randomCharacters(data) {
   console.log(character); // nur uim zu sehen was wir für ein Objekt bekommen
   const img = document.createElement("img"); // erstellen des Img-tags
   const name = document.createElement("p"); // erstellen  des p-tags für den namen
-  const race = document.createElement("p"); // erstellen  des p-tags für den spezies
+  const species = document.createElement("p"); // erstellen  des p-tags für den spezies
   const episode = document.createElement("a"); // erstellen  des p-tags für den episoden-link
+
+  const episodeNum = character.episode.toString().substring(40);
+
   img.src = character.image; // einfügen des image links um auf html seite angezeigt zu werden
   name.textContent = `Character: ${character.name}`; // einfügen des texts um auf html seite angezeigt zu werden
-  race.textContent = `Race: ${character.species}`; // einfügen des texts um auf html seite angezeigt zu werden
-  episode.textContent = `episode`; // einfügen des texts um auf html seite angezeigt zu werden
+  species.textContent = `Species: ${character.species}`; // einfügen des texts um auf html seite angezeigt zu werden
+  episode.textContent = `Episode: ${episodeNum}`; // einfügen des texts um auf html seite angezeigt zu werden
   episode.href = character.episode[0]; // href mit link zum episoden guide
   charDiv.innerHTML = ""; // hier wird das div wieder geleert / damit vermeiden wir das immer neue divs erzeugt werden
 
   // mit appendChild werden die elemente im html eingefügt
   charDiv.appendChild(img);
   charDiv.appendChild(name);
-  charDiv.appendChild(race);
+  charDiv.appendChild(species);
   charDiv.appendChild(episode);
 }
 
