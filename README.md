@@ -1,17 +1,70 @@
 # rick-and-morty-fetch
 
+**[Test this app yourself](https://holledrums.github.io/randomRickAndMorty/)**
+
+---
+
+![screenshot page](./img/pageR%26M.png)
+
+#### Navigation
+
+- About Project
+  - _Description_
+- How to use this Project
+  - _Description_
+- Developed With\_
+- Contact
+  - _Mail_
+  - _GitHub_
+  - _LinkedIn_
+- Used Tools
+  - _Fonts_
+  - _Design_
+  - _Icons_
+  - _Colors_
+
+---
+
+### About Project
+
 Ein Programm, das mit der [Rick-and-Morty-API](https://rickandmortyapi.com/documentation) arbeiten soll
 
-### Funktionalität
-- Das Programm soll Daten zu einem zufälligen Charakter von der API laden
-- Ein Bild des Charakters soll auf der Seite angezeigt werden, sowie eine Begrüßung 'Hi, I'm `name`!'
+### How to use this Project
 
-### Anleitung
-- Erstelle eine HTML- und eine JS-Datei
-- Eine Liste aller Charaktäre im JSON-Format kann von hier geladen werden: [https://rickandmortyapi.com/api/character](https://rickandmortyapi.com/api/character)
-- Verwende `fetch` um die Liste zu laden und die `.json()`-Methode des Response-Objekts um das JSON in ein Objekt umzuwandeln
-- Analysiere das Objekt und finde heraus, wie du die Anzahl der Charaktäre bekoomst
-- Generiere eine Zufallszahl zwischen 1 und der Anzahl der Charaktäre
-- Hol die Daten eines Charakters mit der Zufalszahl aus der Liste der Charaktäre im Objekt
-- Analysiere das Charakter-Objekt und finde heraus, wie man die URL für das Bild des Charakters bekommt
-- Modifiziere das HTML mit DOM so, dass das Bild auf der Seite angezeigt wird, sowie der Name des Charakters
+- Das Programm soll Daten zu einem zufälligen Charakter von der API laden
+- Ein Bild des Charakters soll auf der Seite angezeigt werden, sowie eine paar zusätzliche Infos zum Charakter
+
+### Developed With
+
+- [x] _HTML5_
+- [x] _CSS3_
+- [ ] _SASS_
+- [ ] _SCSS_
+- [x] _JavaScript_
+- [ ] _React_
+- [ ] _Bootstrap_
+- [x] _npm_
+- [ ] _..._
+
+---
+
+### Contact
+
+Mail: <holgeraliusklose@gmail.com><br>
+GitHub: [Holledrums](https://github.com/holledrums)<br>
+LinkedIn: [Holger Klose](https://www.linkedin.com/in/holger-klose-240831147/)
+
+---
+
+### Used Tools
+
+- [icons](https://)
+- [Canva](https://www.canva.com/)
+- [npm](https://www.npmjs.com/)
+- [Google Fonts](https://fonts.google.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [ColorZilla](https://www.colorzilla.com/chrome/)
+
+---
+
+Made with ❤️ by me
